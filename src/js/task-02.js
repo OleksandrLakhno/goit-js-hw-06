@@ -6,6 +6,19 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+// for (let i = 0; i < ingredients.length; i += 1) {
+  
+
+//   const ingEl = document.querySelector('#ingredients');
+//  const tagLiPotato = document.createElement('li');
+// tagLiPotato.classList.add('item');
+// tagLiPotato.textContent = `${ingredients[i]}`;
+//   ingEl.append(tagLiPotato);
+//   console.log(ingEl);
+// }
+
+
+
 
 const ingEl = document.querySelector('#ingredients');
 
