@@ -48,3 +48,5 @@ tagLiCondiments.textContent ='Condiments';
 
 ingEl.append(tagLiPotato,tagLiMushrooms,tagLiGarlic,tagLiTomato,tagLiHerbs,tagLiCondiments);
 console.log(ingEl);
+
+
