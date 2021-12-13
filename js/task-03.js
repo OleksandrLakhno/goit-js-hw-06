@@ -18,9 +18,7 @@ const galleryEl = document.querySelector('.gallery');
 images.forEach(imgEl => {
   galleryEl.insertAdjacentHTML(
     'afterbegin',
-    `<li class = 'liStyle'><img src = "${imgEl.url}",alt = "${imgEl.alt}" width = 500 height = 350></li>`
+    `<li class = 'liStyle'><img src = "${imgEl.url}" alt = "${imgEl.alt}" width = 500 height = 350></li>`
   );
   galleryEl.style.display = 'flex';
-  
-  
 });

@@ -8,7 +8,7 @@ allCategories.forEach(element => {
     console.log('Category:',titleElem.textContent);
     console.log('Elements:',`${liElem.length}`);
 });
-console.log(animals);
+
 
 
 

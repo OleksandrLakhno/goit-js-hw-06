@@ -9,18 +9,17 @@ const valueCounter = {
         this.value += 1;
     },
 };
+const decrementBtn = document.querySelector('button[data-action="decrement"]');
+const incrementBtn = document.querySelector('button[data-action="increment"]');
 
 const valueEl = document.querySelector('#value');
 
-const decrementBtn = document.querySelector('button[data-action="decrement"]');
 decrementBtn.addEventListener('click', function () {
     valueCounter.decrement();
     console.log(valueCounter);
     valueEl.textContent = valueCounter.value;
 });
 
-
-const incrementBtn = document.querySelector('button[data-action="increment"]');
 incrementBtn.addEventListener('click', function () {
     valueCounter.increment();
     console.log(valueCounter);

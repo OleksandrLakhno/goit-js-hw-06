@@ -3,7 +3,7 @@ const addFocus = document.querySelector('#validation-input');
 addFocus.addEventListener('blur',getFocus);
 
 function getFocus(event) {
-    if (event.currentTarget.value.length <= addFocus.dataset.length) {
+    if (event.currentTarget.value.trim().length <= addFocus.dataset.length) {
         addFocus.classList.add('valid');
         addFocus.classList.remove('invalid');
     } else {
