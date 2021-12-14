@@ -13,19 +13,19 @@ const ingredients = [
 //  const tagLiPotato = document.createElement('li');
 // tagLiPotato.classList.add('item');
 // tagLiPotato.textContent = `${ingredients[i]}`;
-//   ingEl.append(tagLiPotato);
+//  ingEl.append(tagLiPotato);
 //   console.log(ingEl);
 // }
-
+ 
 const ingEl = document.querySelector('#ingredients');
 
-
-const elements = ingredients.map(function (ingredient) { 
-const tagLi = document.createElement('li');
+const elements = ingredients.map(ingredient => { 
+  const tagLi = document.createElement('li');
   tagLi.classList.add('item');
   tagLi.textContent = ingredient;
-  ingEl.append(tagLi);
+  return tagLi;
 });
+ingEl.append(...elements);
 
 console.log(ingEl);
 
